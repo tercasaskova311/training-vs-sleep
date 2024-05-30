@@ -1,8 +1,9 @@
 ### Data Analytics Project: Training vs. Sleep in Professional Cycling
 
-#### Overview:
+Overview:
 
 In this project I analyzes the relationship between training and sleep performance in a professional mountain biker. Data was gathered using two sport devices: the Whoop band, which monitors sleep, strain, and recovery, and the Garmin bike computer, which tracks cycling performance metrics such as heart rate, distance, and power. The goal is to understand how sleep correlates with training performance.
+
 -------------
 #### Data Preparation and Cleaning
 
