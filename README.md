@@ -32,16 +32,29 @@ Using Python libraries/Pandas and Matplotlib, I conducted the final data analysi
 - **Sleep Performance**: WHOOP calculates sleep performance by measuring the sleep you got compared to the sleep your body needs, giving a score from 0 to 100%.
 - **Deep Sleep (SWS)**: Known as slow wave sleep, it is one of the four stages of sleep and is crucial for physical restoration.
 
-**a) Scatter Plot**:
+**a) Scatter Plot**:Workout Types and Sleep Duration
+
 - **Objective**: To analyze the relationship between Training Stress Score (TSS) and sleep performance.
 - **Findings**: The scatter plot illustrates the correlation between TSS and sleep performance, providing insights into their relationship.
 
-**b) Bar Plot**:
-- **Objective**: To show average TSS by workout type.
-- **Findings**:
-  - **Bike and XC-Ski**: These workouts have the highest average TSS.
-  - **Insight**: Although the athlete does not ski frequently, XC-Ski sessions have a high TSS, indicating intense training.
+The analysis of average sleep duration by workout type showed:
+- **Run**: Highest average sleep duration (approximately 544 minutes).
+- **Custom**: High average sleep duration (approximately 523 minutes).
+- **Bike**: Moderate average sleep duration (approximately 510 minutes).
+- **MTB (Mountain Biking)**: Slightly lower average sleep duration (approximately 501 minutes).
+- **Other**: Lowest average sleep duration (approximately 492 minutes).
 
+
+**b) Bar Plot**: Sleep Performance by Workout Type
+- **Objective**: To show average TSS by workout type.
+  
+The analysis of average sleep performance by workout type showed:
+- **Run**: Highest average sleep performance (approximately 86.67%).
+- **Custom**: High average sleep performance (approximately 85.33%).
+- **Bike**: Moderate average sleep performance (approximately 80.72%).
+- **MTB (Mountain Biking)**: Slightly lower average sleep performance (approximately 77.69%).
+- **Other**: Lowest average sleep performance (approximately 73.65%).
+  
 **c) Correlation Matrix Heatmap**:
 - **Objective**: To visualize correlation coefficients between various metrics.
 - **Interpretation**:
@@ -49,22 +62,21 @@ Using Python libraries/Pandas and Matplotlib, I conducted the final data analysi
     - Dark Red: Perfect positive correlation (1.0).
     - Dark Blue: Perfect negative correlation (-1.0).
     - White: No correlation (0).
-      
-  - **Findings**:
-    - **Sleep Duration and Sleep Performance % (0.918)**: There is a strong positive correlation between sleep duration and sleep performance percentage, suggesting that longer sleep duration is associated with higher sleep performance.
-    - **Sleep Duration and Deep Sleep (SWS) Duration (0.741)**: There is a moderate positive correlation between sleep duration and the duration of deep sleep, indicating that longer sleep tends to include more deep sleep.
+     
+The correlation matrix and heatmap revealed key relationships among the sleep and training metrics:
+- **Strong Positive Correlations**:
+  - **Sleep and Sleep Performance % (0.918)**: Longer sleep duration is associated with better sleep performance.
+  - **Sleep and Deep (SWS) duration (0.741)**: Longer sleep duration tends to include more deep sleep.
+- **Moderate Positive Correlations**:
+  - **Sleep Performance % and Deep (SWS) duration (0.721)**: Higher sleep performance is linked with more deep sleep.
+- **Weak or No Correlations**:
+  - **TSS and other metrics**: Training Stress Score (TSS) has very weak correlations with sleep duration, sleep performance, and deep sleep duration, indicating that TSS does not significantly impact these sleep metrics.
+-------
 
-#### Summary of Average Values
+### Conclusion
+The data analysis shows that:
+- Longer sleep duration positively impacts sleep performance and deep sleep duration.
+- Training Stress Score (TSS) does not significantly correlate with sleep metrics.
 
-- **Average Sleep Duration**: 8 hours and 20 minutes.
-- **Average Sleep Performance**: 79.096%.
-- **Average Deep Sleep (SWS) Duration**: 84.9 minutes.
-  - *Note*: Most adults need around 1.5–2 hours of deep sleep per night.
-- **Average TSS**: 102.43.
-  - **TSS® Guide**:
-    - Below 150 (low): Recovery likely completed by the next day.
-    - 150 to 300 (medium): Possible leftover tiredness the next day, likely gone by the second day.
-    - 300 to 450 (high): Some tiredness even after two days.
-    - More than 450 (very high): Likely tired for several days after the ride.
 
-This project demonstrates a comprehensive analysis of the relationship between training and sleep in a professional athlete. By employing rigorous data cleaning, standardization, and analysis techniques, significant correlations were uncovered, highlighting the importance of sleep in athletic performance. These insights can be instrumental for athletes and coaches in optimizing training and recovery strategies.
+
