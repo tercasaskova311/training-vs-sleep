@@ -23,7 +23,7 @@ c)Correlation Matrix Heatmap
 
 Average values:
 --------------
-Average Sleep Duration: 8: 20 hod.
- Average Sleep Performance (%): 79.096
- Average Deep (SWS) Duration (minutes): 84.9
- Average TSS: 102.43
+#Average Sleep Duration: 8: 20 hod.
+#Average Sleep Performance (%): 79.096
+#Average Deep (SWS) Duration (minutes): 84.9
+#Average TSS: 102.43
