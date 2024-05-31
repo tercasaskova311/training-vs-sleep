@@ -25,14 +25,8 @@ Using Python libraries, mainly, Pandas and Matplotlib, I conducted the final dat
 - **Sleep Performance**: WHOOP calculates sleep performance by measuring the sleep you got compared to the sleep your body needs, giving a score from 0 to 100%.
 - **Deep Sleep (SWS)**: Known as slow-wave sleep, it is one of the four stages of sleep and is crucial for physical restoration.
 
-**a) Scatter Plot: Workout Types and Sleep Duration**
-The analysis of average sleep duration by workout type showed:
-- **Run**: Highest average sleep duration (approximately 544 minutes).
-- **Custom**: High average sleep duration (approximately 523 minutes).
-- **Bike**: Moderate average sleep duration (approximately 510 minutes).
-- **MTB (Mountain Biking)**: Slightly lower average sleep duration (approximately 501 minutes).
-- **Other**: Lowest average sleep duration (approximately 492 minutes).
-
+**a) Scatter Plot: Workout Types and Sleep Performance**
+The analysis of sleep performance by workout type showed:
 ![Image Alt text](https://github.com/tercasaskova311/training-vs-sleep/blob/main/Scatterplot.png)
 
 **b) Bar Plot: Sleep Performance by Workout Type**
