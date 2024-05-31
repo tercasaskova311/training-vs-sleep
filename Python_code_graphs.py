@@ -1,23 +1,16 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[4]:
-
-
 import pandas as pd
 import matplotlib.pyplot as plt
 
-# Load the CSV file to examine its contents
 file_path_csv = '/Users/terezasaskova/Desktop/python/sleep vs training.csv'
 data_csv = pd.read_csv(file_path_csv)
 
-# Load the CSV file with the correct delimiter
+#correct delimiter
 data_csv = pd.read_csv(file_path_csv, delimiter=';')
 
-# Display the first few rows of the CSV file to understand its structure
+# Display the first few rows - understand its structure
 data_csv.head()
 
-# Clean the TSS column by replacing commas with dots and converting to float
+# Clean the TSS column - replacing commas with dots and converting to float
 data_csv['TSS'] = data_csv['TSS'].str.replace(',', '.').astype(float)
 
 
@@ -27,7 +20,7 @@ data_csv['Date'] = pd.to_datetime(data_csv['Date'], format='%d-%m-%Y')
 # Set the 'Date' column as the index
 data_csv.set_index('Date', inplace=True)
 
-# Plot Sleep performance and TSS over time
+# Plot Sleep performance (TSS over time)
 plt.figure(figsize=(14, 7))
 
 # Plot Sleep performance
@@ -45,11 +38,6 @@ plt.tight_layout()
 
 # Show plot
 plt.show()
-
-
-
-# In[9]:
-
 
 import matplotlib.pyplot as plt
 
@@ -77,11 +65,6 @@ plt.tight_layout()
 # Show plot
 plt.show()
 
-
-
-# In[6]:
-
-
 # Bar plot comparing TSS across different WorkoutTypes
 plt.figure(figsize=(12, 6))
 data_csv.groupby('WorkoutType')['TSS'].mean().sort_values().plot(kind='bar', color='skyblue')
@@ -93,10 +76,6 @@ plt.tight_layout()
 
 # Show plot
 plt.show()
-
-
-# In[19]:
-
 
 import pandas as pd
 
@@ -115,19 +94,12 @@ data_csv['TSS'] = data_csv['TSS'].str.replace(',', '.').astype(float)
 # Calculate the correlation matrix for the sleep metrics
 sleep_metrics = data_csv[['sleep', 'Sleep performance %', 'Deep (SWS) duration (min)', 'TSS']]
 
-# Convert 'sleep' column to duration in minutes
+#sleep column to duration in minutes
 sleep_metrics['sleep'] = pd.to_timedelta(data_csv['sleep']).dt.total_seconds() / 60
 
-# Calculate the correlation matrix
+#the correlation matrix
 df= correlation_matrix = sleep_metrics.corr()
 df
-
-
-
-
-
-# In[21]:
-
 
 import seaborn as sns
 import matplotlib.pyplot as plt
@@ -137,10 +109,3 @@ plt.figure(figsize=(10, 8))
 sns.heatmap(correlation_matrix, annot=True, cmap='coolwarm', fmt=".2f", linewidths=.5)
 plt.title('Correlation Matrix Heatmap')
 plt.show()
-
-
-# In[ ]:
-
-
-
-
