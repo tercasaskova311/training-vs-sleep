@@ -1,6 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
+
 file_path_csv = '/Users/terezasaskova/Desktop/python/sleep vs training.csv'
 data_csv = pd.read_csv(file_path_csv)
 
