@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 
-file_path_csv = '/Users/terezasaskova/Desktop/python/sleep vs training.csv'
+file_path_csv = '/Users/Desktop/python/sleep vs training.csv'
 data_csv = pd.read_csv(file_path_csv)
 
 #correct delimiter
@@ -43,7 +43,7 @@ plt.show()
 import matplotlib.pyplot as plt
 
 # Reload the data
-data_csv = pd.read_csv('/Users/terezasaskova/Desktop/python/sleep vs training.csv', delimiter=';')
+data_csv = pd.read_csv('/Users/Desktop/python/sleep vs training.csv', delimiter=';')
 
 # Convert the 'Date' column to datetime
 data_csv['Date'] = pd.to_datetime(data_csv['Date'], format='%d-%m-%Y')
@@ -81,7 +81,7 @@ plt.show()
 import pandas as pd
 
 # Reload the data
-data_csv = pd.read_csv('/Users/terezasaskova/Desktop/python/sleep vs training.csv', delimiter=';')
+data_csv = pd.read_csv('/Users/Desktop/python/sleep vs training.csv', delimiter=';')
 
 # Convert the 'Date' column to datetime
 data_csv['Date'] = pd.to_datetime(data_csv['Date'], format='%d-%m-%Y')
